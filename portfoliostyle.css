@@ -1,12 +1,127 @@
-@media {
 
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*Header*/
+.nav {
+	background-color: #283149;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.nav a {
+	font-family: 'Fjalla One', sans-serif;
+	padding: 1em;
+	float: left;
+	display: block;
+	font-size: 25px;
+	color: white;
+	text-decoration: none;
+}
+
+/*Welcome section*/
+.welcome-section {
+	background-color: #404b69;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 80%;
+}
+
+.welcome-paragraph {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: white;
 }
 
 h1 {
 	font-family: 'Sofia', cursive;
-	font-size: 50px;
+	font-size: 80px;
+	color: #da0463;
+	text-align: center;
 }
 
-h2 {
-	font-size: 30px;
+/*Projects section*/
+body {
+	background-color: #dbedf3;
+	left: 0;
+	width: 100%;
 }
+
+.project-section {
+	padding-top: 25px;
+}
+
+.grid-title {
+	font-size: 50px;
+	font-family: 'Bree Serif', serif;
+	color: black;
+	text-align: center;
+}
+
+.project-img {
+	height: 200px;
+	width: ;
+}
+
+.project-title {
+	font-family: 'Gayathri', sans-serif;
+	font-size: 25px;
+	color: black;
+}
+
+.project-grid {
+	align-content: center;
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	grid-gap: 4rem;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+	margin-bottom: 6rem;
+}
+
+.project-tile {
+	width: 320px;
+	border: 5px;
+	padding:  0em 1em;
+	border-radius: 16px;
+}
+
+/*Footer*/
+footer {
+	background-color: #404b69;
+	text-align: center;
+	padding: 10px;
+}
+
+footer h2 {
+	font-size: 50px;
+	font-family: 'Bree Serif', serif;
+	color: white;
+}
+
+#profile-link {
+	color: white;
+	font-size: 30px;
+	font-family: 'Francois One', sans-serif;
+	display: inline;
+	padding: 10px;
+	text-decoration: none;
+}
+
